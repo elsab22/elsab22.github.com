@@ -11,3 +11,26 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Componentes */
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+}
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+.logo {
+}
