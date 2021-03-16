@@ -4,11 +4,7 @@
 /* Variables */
 :root {
   --primario: #e91e63;
-  /* --primario-claro: #a2f598;
-  --primario-fuerte: #279e19;
-  --secundario: #161917;
-  --secundario-claro: #b2b3b2;
-  --secundario-fuerte: #000000; */
+  --primario-gradient: #e91e63;
   --bg: #ffffff;
     font-family: "Montserrat";
   --h1: 48px;
@@ -17,6 +13,11 @@
   --h4: 25px;
   --h5: 20px;
   --h6: 16px;
+  --gradient: linear-gradient(60deg, var(--primario) 0%, var(--primario-gradient) 100%);
+  --gradient-alt: linear-gradient(60deg, var(--primario-gradient) 0%, var(--bg) 100%);
+  --transition: all 0.4s ease-in-out;
+  --transition-links: transform 0.25s ease-out;
+  --transition-modes: all 500ms ease-in-out, color 1000ms fill 1000ms path 1000ms ease-in-out;
 }
 
 /* Base */
@@ -88,6 +89,50 @@ ul li a {
   display: flex;
   font-size: 24px;
   column-gap: 9%;
+}
+
+.nav ul a: hover {
+	text-decoration: none;
+	background: var(--primario):
+
+}
+
+
+.nav {
+  position: relative;
+}
+
+.nav a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 103%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background-image: var(--gradient);
+  transform-origin: bottom right;
+  transition: var(--transition-links);
+}
+
+.nav a:hover {
+  color: var(--primary);
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav a:hover::before {
+  filter: drop-shadow(1px 0 2px var(--primary));
 }
 /* .logo {
   margin-right: 41px;
