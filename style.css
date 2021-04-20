@@ -170,6 +170,8 @@ ul li a {
 }
 
 
+
+
 .presentaciontexto{
 text-align: left;
 padding-left: 9%;
@@ -196,6 +198,19 @@ padding-top: 10%; */
 
 .nombre span {
   font-weight: 700;
+}
+
+.titulos{
+  color: var(--primario);
+  display: flex;
+  font-size: 42px;
+  column-gap: 9%;
+  padding-inline-start:0;
+  padding-left: 9%;
+}
+
+.titulosproyectos{
+  color: black;
 }
 
 .flex-center {
