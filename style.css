@@ -77,10 +77,8 @@ ul li a {
   background: white;
   width: 100%;
   padding-left: 9%;
-
-
-
 }
+
 
 .nav {
   flex: 1;
@@ -96,9 +94,8 @@ ul li a {
 .nav ul li:hover {
 	text-decoration: none;
 	background: var(--primario):
-
 }
-
+/* Crear este formato registrando un click para mantenerlo en active */
 
 .nav {
   position: relative;
@@ -108,10 +105,18 @@ ul li a {
   position: relative;
 }
 
+.nav li a[href*="proyectos"]::after {
+ position: absolute;
+ right: -300px;
+  content: url(./assets/chevron-down.svg);
+}
+
+/* Acomodar chevron */
+
 .nav a {
   display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  /* flex-direction: column-reverse;
+  align-items: center; */
   transition: var(--transition);
 }
 
@@ -142,6 +147,22 @@ ul li a {
 .nav a:hover::before {
   filter: drop-shadow(1px 0 2px var(--primary));
 }
+
+.submenu-proyectos {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+}
+.submenu-proyectos li {
+  line-height: 2;
+
+}
+/* .submenu-proyectos li a {
+color: white;
+} */
+
 /* .logo {
   margin-right: 41px;
   margin-top: 5px;
