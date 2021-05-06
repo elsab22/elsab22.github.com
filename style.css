@@ -187,7 +187,26 @@ color: white;
   line-height: 100vh;
   align-items:center;
   gap:9%;
-  background: pink;
+}
+
+.piesimagen{
+  font-size: var(--h6);
+  display: flex;
+  padding-left: 9%;
+  padding-top: 0px;
+  background-color: var(--bg);
+
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+}
+
+.cuadroblanco{
+  background-color: var(--bg);
 }
 
 
@@ -207,7 +226,7 @@ padding-top: 10%; */
 }
 .inicio {
   line-height: 100vh;
-  background: lightskyblue;
+
 }
 
 .nombre {
