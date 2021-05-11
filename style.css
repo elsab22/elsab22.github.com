@@ -197,6 +197,15 @@ color: white;
   background-color: var(--bg);
 
 }
+
+.piesimagenderecha{
+  font-size: var(--h6);
+  display: flex;
+  padding-left: 9%;
+  padding-top: 0px;
+  background-color: var(--bg);
+  text-align: right;
+}
 .imagenes{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -208,6 +217,7 @@ color: white;
 .cuadroblanco{
   background-color: var(--bg);
 }
+
 
 
 
@@ -256,6 +266,11 @@ padding-top: 10%; */
 .flex-center {
   justify-items: center;
   align-items: center;
+}
+
+@media screen and (min-width: 414px) {
+  
+  
 }
 
 /* Utilities */
