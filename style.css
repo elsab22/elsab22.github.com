@@ -117,7 +117,6 @@ ul li a {
 
 .nav ul li:hover {
   text-decoration: none;
-  background: var(--primario);
 }
 /* Crear este formato registrando un click para mantenerlo en active */
 
