@@ -68,6 +68,17 @@ ul li a {
 
 }
 
+@media screen and (max-width: 415px) {
+  :root {
+  --h1: 48px;
+  --h2: 39px;
+  --h3: 32px;
+  --h4: 25px;
+  --h5: 20px;
+  --h6: 16px;
+  }
+}
+
 /* Componentes */
 .header {
   display: flex;
@@ -77,6 +88,7 @@ ul li a {
   background: white;
   width: 100%;
   padding-left: 9%;
+  z-index: 100;
 }
 
 
@@ -89,6 +101,7 @@ ul li a {
   font-size: 24px;
   column-gap: 9%;
   padding-inline-start:0;
+  background-color: rgba(240, 255, 255, 0.487);
 }
 
 .nav ul li:hover {
@@ -148,6 +161,12 @@ ul li a {
   filter: drop-shadow(1px 0 2px var(--primary));
 }
 
+/* @media screen and (max-width: 415px) {
+  .nav a {
+    font-size: 15px;
+  }
+} */
+
 .submenu-proyectos {
   position: absolute;
   top: 50px;
@@ -184,11 +203,55 @@ color: white;
   vertical-align: middle;
 } */
 .presentacion{
+  display: flex;
   line-height: 100vh;
   align-items:center;
   gap:9%;
   background: pink;
 }
+
+.piesimagen{
+  font-size: var(--h6);
+  display: flex;
+  padding-left: 9%;
+  padding-top: 0px;
+  background-color: var(--bg);
+
+}
+
+.piesimagenderecha{
+  font-size: var(--h6);
+  display: flex;
+  padding-left: 9%;
+  padding-top: 0px;
+  background-color: var(--bg);
+  text-align: right;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+}
+
+@media screen and (max-width: 415px) {
+  .imagenes{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+      position: relative;
+      max-width: 90vw;
+      margin: 0 auto;
+  }
+}
+
+
+.cuadroblanco{
+  background-color: var(--bg);
+}
+
 
 
 
@@ -238,6 +301,7 @@ padding-top: 10%; */
   justify-items: center;
   align-items: center;
 }
+
 
 /* Utilities */
 .flex {
