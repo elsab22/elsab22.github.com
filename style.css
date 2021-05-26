@@ -305,6 +305,16 @@ ul li a {
   padding-left: 9%;
 }
 
+.contacto div {
+  display: grid;
+}
+
+.contacto div a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
 /* Utilities */
 .flex {
   display: flex;
