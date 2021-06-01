@@ -217,9 +217,10 @@ ul li a {
 /* Presentacion */
 .presentacion {
   display: flex;
-  line-height: 100vh;
   align-items: center;
   gap: 9%;
+  background-color: antiquewhite;
+  line-height: 100vh;
 }
 
 .presentaciontexto {
@@ -305,6 +306,10 @@ ul li a {
   padding-left: 9%;
 }
 
+.contacto {
+  line-height: 100vh;
+}
+
 .contacto div {
   display: grid;
 }
@@ -313,6 +318,7 @@ ul li a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
+  padding-left: 9%;
 }
 
 /* Utilities */
