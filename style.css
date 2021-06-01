@@ -115,7 +115,7 @@ ul li a {
   font-size: var(--h5);
   column-gap: 9%;
   padding-inline-start: 0;
-  background-color: rgba(240, 255, 255, 0.487);
+  background-color: rgba(255, 255, 255, 0.487);
 }
 
 .nav ul li {
@@ -204,13 +204,22 @@ ul li a {
 }
 
 .nombre {
-  font-size: var(--h2);
+  font-size: var(--h1);
   font-weight: 300;
   color: var(--primario);
   text-align: center;
 }
 
 .nombre span {
+  font-weight: 700;
+}
+.datoscontacto {
+  font-size: var(--h5);
+  font-weight: 300;
+  color: black;
+}
+
+.datoscontacto span {
   font-weight: 700;
 }
 
@@ -238,6 +247,19 @@ ul li a {
 
 #ilustracion.proyectos {
   scroll-margin: 100px;
+  padding: 5px;
+}
+
+#editorial.proyectos {
+  scroll-margin: 100px;
+}
+
+#branding.proyectos {
+  scroll-margin: 100px;
+}
+
+#contacto.proyectos {
+  scroll-margin: 100px;
 }
 
 .proyectos-heading {
@@ -256,6 +278,7 @@ ul li a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
+  padding-top: var(--h3);
 }
 
 .proyectos-imagenes-img-izquierda {
@@ -315,14 +338,11 @@ ul li a {
   font-weight: 300;
   color: var(--primario);
   padding-left: 9%;
+  padding-top: 10px;
 }
 
 .contacto {
   height: 100vh;
-}
-
-.contacto > * {
-  border: 2px solid;
 }
 
 .contacto div {
