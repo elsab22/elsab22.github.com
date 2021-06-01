@@ -219,8 +219,7 @@ ul li a {
   display: flex;
   align-items: center;
   gap: 9%;
-  background-color: antiquewhite;
-  line-height: 100vh;
+  height: 100vh;
 }
 
 .presentaciontexto {
@@ -235,6 +234,10 @@ ul li a {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
+}
+
+#ilustracion.proyectos {
+  scroll-margin: 100px;
 }
 
 .proyectos-heading {
@@ -274,6 +277,14 @@ ul li a {
   grid-column: 1 / 2;
 }
 
+.proyectos-imagenes img {
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.proyectos-imagenes img:hover {
+  transform: scale(1.1);
+}
+
 .proyectos-imagenes img:hover + p[hidden] {
   display: block;
   max-width: 80%;
@@ -307,11 +318,17 @@ ul li a {
 }
 
 .contacto {
-  line-height: 100vh;
+  height: 100vh;
+}
+
+.contacto > * {
+  border: 2px solid;
 }
 
 .contacto div {
   display: grid;
+  align-content: center;
+  height: 100%;
 }
 
 .contacto div a {
