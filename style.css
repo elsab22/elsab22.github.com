@@ -223,6 +223,16 @@ ul li a {
   font-weight: 700;
 }
 
+.parrafo-proyectos {
+  font-size: var(--h5);
+  font-weight: 300;
+  color: black;
+}
+
+.parrafo-proyectos span {
+  font-weight: 700;
+}
+
 /* Presentacion */
 .presentacion {
   display: flex;
@@ -412,4 +422,3 @@ ul li a {
 .outline {
   outline: 2px solid black;
 }
- 
